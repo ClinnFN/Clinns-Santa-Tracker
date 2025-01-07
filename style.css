@@ -1,0 +1,32 @@
+/* Style for Santa Tracker 2025 */
+body {
+    background: url('christmas_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 4em;
+    margin-top: 50px;
+}
+#countdown {
+    font-size: 3em;
+    margin: 20px 0;
+}
+.button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+.button:hover {
+    background-color: #cc0000;
+}
