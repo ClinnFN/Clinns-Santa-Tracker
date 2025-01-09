@@ -3,78 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santa Tracker 2025</title>
+    <title>Clinns Santa Tracker 2024</title>
     <style>
         body {
-            background: url('christmas_background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Arial', sans-serif;
-            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             text-align: center;
-            padding: 0;
-            margin: 0;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 4em;
-            margin-top: 50px;
-        }
-        #countdown {
-            font-size: 3em;
-            margin: 20px 0;
-        }
-        .button {
-            background-color: #ff0000;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.5em;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 20px;
-        }
-        .button:hover {
-            background-color: #cc0000;
+            color: #d32f2f;
         }
     </style>
 </head>
 <body>
-    <h1>Santa Tracker 2025</h1>
-    <div id="countdown">Loading countdown...</div>
-    <button class="button" onclick="showGamesMessage()">Ineractive Map (Comming Dec 1)</button>
-    <button class="button" onclick="showGamesMessage()">Interactive Games (Coming Dec 1)</button>
-
-    <script>
-        // Countdown timer setup
-        const countdownElement = document.getElementById('countdown');
-        const targetDate = new Date('December 24, 2025 05:00:00').getTime();
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-            if (distance < 0) {
-                countdownElement.innerHTML = "It's Christmas Eve!";
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-
-        // Button actions
-        function openMap() {
-            window.location.href = 'interactive_map.html';
-        }
-
-        function showGamesMessage() {
-            alert('Interactive games will be available starting December 1st!');
-        }
-    </script>
+    <div class="container">
+        <h1>Santa Tracker Notice</h1>
+        <p>We regret to inform you that the Santa Tracker is shutting down. 2024 will be the last time this website is up and running.</p>
+        <p>Thank you for all the wonderful memories and for tracking Santa with us over the years!
+        - ClinnFN</p>
+    </div>
 </body>
 </html>
